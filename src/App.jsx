@@ -1,5 +1,20 @@
+import { useState } from "react";
+import NavBar from "./components/NavBar";
+import Overlay from "./components/Overlay";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world</h1>;
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav((prevNav) => !prevNav);
+  };
+
+  return (
+    <div className="lg:px-20">
+      <Overlay nav={nav} />
+      <NavBar handleNav={handleNav} nav={nav} />
+    </div>
+  );
 }
 
 export default App;

@@ -3,7 +3,7 @@ import { IoMenuOutline } from "react-icons/io5";
 
 const NavBar = ({ handleNav, nav }) => {
   return (
-    <div className="relative flex items-center justify-between bg-white p-6 shadow-xs">
+    <div className="relative flex items-center justify-between bg-white p-6">
       {/* Logo */}
       <div>
         <img src="/images/logo.svg" alt="Logo easybank" />

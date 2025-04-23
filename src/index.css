@@ -3,8 +3,32 @@
 
 @theme {
   --font-publicSans: "Public Sans", sans-serif;
+
+  --color-dark-blue: var(--dark-blue);
+  --color-lime-green: var(--lime-green);
+  --color-bright-cyan: var(--bright-cyan);
+
+  --color-grayish-blue: var(--grayish-blue);
+  --color-light-grayish-blue: var(--light-grayish-blue);
+  --color-very-light-gray: var(--very-light-gray);
 }
 
 :root {
   @apply font-publicSans;
+
+  /* === Primary === */
+
+  /* title card, heading & sub-heading + bg footer */
+  --dark-blue: rgb(45, 49, 77);
+
+  --lime-green: rgb(42, 209, 120);
+  --bright-cyan: rgb(43, 216, 216);
+
+  /* === Neutral === */
+
+  /* text body pada card + bg features section */
+  --grayish-blue: rgb(117, 123, 139);
+
+  --light-grayish-blue: rgb(237, 242, 247); /* bg hero & articles section */
+  --very-light-gray: rgb(250, 250, 250);
 }

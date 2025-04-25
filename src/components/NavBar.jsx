@@ -3,7 +3,7 @@ import { IoMenuOutline } from "react-icons/io5";
 
 const NavBar = ({ handleNav, nav }) => {
   return (
-    <div className="relative flex items-center justify-between bg-white p-6">
+    <div className="relative flex items-center justify-between bg-white p-6 lg:px-20">
       {/* Logo */}
       <div>
         <img src="/images/logo.svg" alt="Logo easybank" />
@@ -24,7 +24,7 @@ const NavBar = ({ handleNav, nav }) => {
       <div
         className={`absolute top-24 left-0 w-full origin-top md:hidden ${nav ? "scale-y-100" : "scale-y-0"} flex justify-center duration-300`}
       >
-        <ul className="flex w-[85%] flex-col items-center justify-between gap-3 rounded-md bg-white py-6 shadow-md">
+        <ul className="flex w-11/12 flex-col items-center justify-between gap-4 rounded-md bg-white py-6 shadow-md">
           <li className="w-full cursor-pointer text-center text-lg">
             <a href="#" className="text-dark-blue font-medium">
               Home
@@ -57,27 +57,27 @@ const NavBar = ({ handleNav, nav }) => {
       {/* desktop menu */}
       <ul className="hidden justify-evenly gap-4 md:flex lg:gap-8">
         <li>
-          <a href="#" className="text-dark-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium">
             Home
           </a>
         </li>
         <li>
-          <a href="#" className="text-dark-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium">
             About
           </a>
         </li>
         <li>
-          <a href="#" className="text-dark-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium">
             Contact
           </a>
         </li>
         <li>
-          <a href="#" className="text-dark-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium">
             Blog
           </a>
         </li>
         <li>
-          <a href="#" className="text-dark-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium">
             Careers
           </a>
         </li>
@@ -85,7 +85,14 @@ const NavBar = ({ handleNav, nav }) => {
       {/* end desktop menu */}
 
       {/* request invite */}
-      <div className="hidden md:block">asdadanml</div>
+      <div className="hidden md:block">
+        <button
+          type="button"
+          className="from-lime-green to-bright-cyan cursor-pointer rounded-full bg-linear-to-r/hsl px-7 py-2.5 font-bold text-white"
+        >
+          Request Invite
+        </button>
+      </div>
       {/* end request invite */}
     </div>
   );

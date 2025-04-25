@@ -17,12 +17,10 @@ function App() {
     <>
       <Overlay nav={nav} />
       <NavBar handleNav={handleNav} nav={nav} />
-      <div className="lg:px-20">
-        <Hero />
-        <Features />
-        <Articles />
-        <Footer />
-      </div>
+      <Hero />
+      <Features />
+      <Articles />
+      <Footer />
     </>
   );
 }

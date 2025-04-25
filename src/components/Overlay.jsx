@@ -3,7 +3,7 @@ const Overlay = ({ nav }) => {
     <div
       className={
         nav
-          ? `absolute inset-0 bg-linear-to-b from-black/30 from-30% to-white to-70% duration-300 ease-in ${nav ? "scale-y-100" : "scale-y-0"}`
+          ? `fixed inset-0 h-screen bg-linear-to-b from-black/30 from-100% to-white duration-300 ease-in md:hidden ${nav ? "scale-y-100" : "scale-y-0"}`
           : ""
       }
     ></div>

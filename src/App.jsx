@@ -1,6 +1,10 @@
 import { useState } from "react";
 import NavBar from "./components/NavBar";
 import Overlay from "./components/Overlay";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Articles from "./components/Articles";
+import Footer from "./components/Footer";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -10,10 +14,16 @@ function App() {
   };
 
   return (
-    <div className="lg:px-20">
+    <>
       <Overlay nav={nav} />
       <NavBar handleNav={handleNav} nav={nav} />
-    </div>
+      <div className="lg:px-20">
+        <Hero />
+        <Features />
+        <Articles />
+        <Footer />
+      </div>
+    </>
   );
 }
 

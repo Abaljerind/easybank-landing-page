@@ -1,5 +1,6 @@
 import { AiOutlineClose } from "react-icons/ai";
 import { IoMenuOutline } from "react-icons/io5";
+import ButtonRequest from "./ButtonRequest";
 
 const NavBar = ({ handleNav, nav }) => {
   return (
@@ -86,12 +87,7 @@ const NavBar = ({ handleNav, nav }) => {
 
       {/* request invite */}
       <div className="hidden md:block">
-        <button
-          type="button"
-          className="from-lime-green to-bright-cyan cursor-pointer rounded-full bg-linear-to-r/hsl px-7 py-2.5 font-bold text-white"
-        >
-          Request Invite
-        </button>
+        <ButtonRequest />
       </div>
       {/* end request invite */}
     </div>

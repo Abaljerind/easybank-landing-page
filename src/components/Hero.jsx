@@ -1,3 +1,5 @@
+import ButtonRequest from "./ButtonRequest";
+
 const Hero = () => {
   return (
     <div>
@@ -31,12 +33,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <button
-          type="button"
-          className="from-lime-green to-bright-cyan cursor-pointer rounded-full bg-linear-to-r/hsl px-7 py-2.5 font-bold text-white"
-        >
-          Request Invite
-        </button>
+        <ButtonRequest />
       </div>
       {/* ./ hero text */}
     </div>

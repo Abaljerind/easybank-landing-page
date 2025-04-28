@@ -23,9 +23,9 @@ const Features = () => {
   ];
 
   return (
-    <div className="bg-light-grayish-blue px-4 py-16">
+    <div className="bg-light-grayish-blue px-4 py-16 md:-mt-64">
       {/* header */}
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-center md:w-2/3 md:text-start">
         <h2 className="text-dark-blue mb-4 text-3xl font-medium">
           Why choose <br className="md:hidden" /> Easybank?
         </h2>
@@ -37,18 +37,20 @@ const Features = () => {
       {/* ./ header */}
 
       {/* features */}
-      <div className="grid">
+      <div className="grid md:grid-cols-2 md:justify-center md:gap-4">
         {features.map((feature, index) => {
           return (
             <div
               key={index + 1}
-              className="mb-8 flex flex-col items-center gap-4 last:mb-0"
+              className="mb-8 flex flex-col items-center gap-4 last:mb-0 md:items-start"
             >
               <img src={feature.image} alt={feature.text} />
-              <h4 className="text-dark-blue text-xl font-medium">
+              <h4 className="text-dark-blue text-xl font-medium md:text-start">
                 {feature.title}
               </h4>
-              <p className="text-grayish-blue text-center">{feature.text}</p>
+              <p className="text-grayish-blue text-center md:text-start">
+                {feature.text}
+              </p>
             </div>
           );
         })}

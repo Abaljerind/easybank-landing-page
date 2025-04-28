@@ -4,7 +4,7 @@ import ButtonRequest from "./ButtonRequest";
 
 const NavBar = ({ handleNav, nav }) => {
   return (
-    <div className="relative flex items-center justify-between bg-white p-6">
+    <div className="relative z-30 flex items-center justify-between bg-white p-6 md:p-3">
       {/* Logo */}
       <div>
         <img src="/images/logo.svg" alt="Logo easybank" />
@@ -23,7 +23,7 @@ const NavBar = ({ handleNav, nav }) => {
 
       {/* Mobile menu */}
       <div
-        className={`absolute top-24 left-0 w-full origin-top md:hidden ${nav ? "scale-y-100" : "scale-y-0"} flex justify-center duration-300`}
+        className={`absolute top-24 left-0 z-20 w-full origin-top md:hidden ${nav ? "scale-y-100" : "scale-y-0"} flex justify-center duration-300`}
       >
         <ul className="flex w-11/12 flex-col items-center justify-between gap-4 rounded-md bg-white py-6 shadow-md">
           <li className="w-full cursor-pointer text-center text-lg">

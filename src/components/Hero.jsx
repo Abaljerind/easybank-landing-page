@@ -2,40 +2,41 @@ import ButtonRequest from "./ButtonRequest";
 
 const Hero = () => {
   return (
-    <div>
-      {/* hero image and background */}
-      <div>
-        <div className="relative -z-10">
-          <img
-            src="./images/bg-intro-mobile.svg"
-            alt="Background Image"
-            className="w-[650px]"
-          />
-          <img
-            src="./images/image-mockups.png"
-            alt="Image Mockups"
-            className="absolute -top-20 w-[650px] px-2"
-          />
-        </div>
-      </div>
-      {/* ./ hero image and background */}
-
+    <div className="flex flex-col-reverse pb-20 md:flex-row md:pb-4">
       {/* hero text */}
-      <div className="-mt-8 flex flex-col items-center gap-8 px-4 pb-20 text-center">
-        <div className="text-center">
-          <h1 className="text-dark-blue mb-4 text-4xl font-medium">
-            Next generation <br className="md:hidden" /> digital banking
-          </h1>
-          <p className="text-grayish-blue font-light">
-            Take your financial life online. Your Easybank account will be a
-            one-stop-shop for spending, saving, budgeting, investing, and much
-            more.
-          </p>
-        </div>
-
+      <div className="flex flex-col items-center justify-center gap-8 px-4 text-center md:mt-10 md:w-9/12 md:items-start md:justify-start md:gap-6 md:pr-0 md:text-start">
+        <h1 className="text-dark-blue -mt-6 text-4xl md:mt-0 md:text-start">
+          Next generation digital banking
+        </h1>
+        <p className="text-grayish-blue md:max-w-[400px] md:text-start">
+          Take your financial life online. Your Easybank account will be a
+          one-stop-shop for spending, saving, budgeting, investing and much
+          more.
+        </p>
         <ButtonRequest />
       </div>
       {/* ./ hero text */}
+
+      {/* hero image */}
+      <div className="relative overflow-hidden md:h-screen md:w-full md:overflow-y-visible">
+        <img
+          src="./images/image-mockups.png"
+          alt="Mockups"
+          className="absolute -top-24 md:-top-16 md:-right-[74px] md:z-10"
+        />
+
+        <img
+          src="./images/bg-intro-desktop.svg"
+          alt="Background Image desktop"
+          className="hidden md:absolute md:-top-16 md:-right-16 md:block md:w-full md:scale-125"
+        />
+        <img
+          src="./images/bg-intro-mobile.svg"
+          alt="Background Image mobile"
+          className="-z-10 w-full md:hidden"
+        />
+      </div>
+      {/* ./ hero image */}
     </div>
   );
 };

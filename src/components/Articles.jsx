@@ -33,7 +33,7 @@ const Articles = () => {
   return (
     <div className="bg-very-light-gray px-4 py-16">
       {/* header */}
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-center md:text-start">
         <h2 className="text-dark-blue mb-4 text-3xl font-medium">
           Latest Articles
         </h2>
@@ -41,12 +41,12 @@ const Articles = () => {
       {/* ./ header */}
 
       {/* article */}
-      <div className="grid">
+      <div className="grid md:grid-cols-2 md:gap-8">
         {articles.map((article, index) => {
           return (
             <div
               key={index + 1}
-              className="mb-8 flex flex-col gap-2 overflow-hidden rounded-md bg-white shadow-xs last:mb-0"
+              className="mb-8 flex flex-col gap-2 overflow-hidden rounded-md bg-white shadow-xs last:mb-0 md:mb-0"
             >
               <img
                 src={article.image}

@@ -70,7 +70,7 @@ const Footer = () => {
 
         {/* nav items */}
         <div className="mt-8">
-          <ul className="text-very-light-gray grid gap-4 text-center">
+          <ul className="text-very-light-gray grid gap-4 text-center md:grid-cols-2">
             {navItems.map((item, index) => {
               return (
                 <li key={index + 1}>

@@ -46,7 +46,7 @@ const Articles = () => {
           return (
             <div
               key={index + 1}
-              className="mb-8 flex flex-col gap-2 overflow-hidden rounded-md bg-white shadow-xs last:mb-0 md:mb-0"
+              className="group mb-8 flex flex-col gap-2 overflow-hidden rounded-md bg-white shadow-xs duration-300 last:mb-0 hover:drop-shadow-xl md:mb-0"
             >
               <img
                 src={article.image}
@@ -57,7 +57,7 @@ const Articles = () => {
                 <p className="text-grayish-blue mb-2 text-xs xl:text-sm">
                   {article.author}
                 </p>
-                <h4 className="text-dark-blue mb-2 text-lg leading-6 font-medium">
+                <h4 className="text-dark-blue group-hover:text-lime-green mb-2 cursor-pointer text-lg leading-6 font-medium duration-300">
                   {article.title}
                 </h4>
                 <p className="text-grayish-blue text-sm">

@@ -39,8 +39,8 @@ const navItems = [
 
 const Footer = () => {
   return (
-    <div className="bg-dark-blue grid justify-center py-10">
-      <div>
+    <div className="bg-dark-blue grid justify-center py-10 lg:grid-cols-2 lg:px-5">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-8">
         {/* logo + social media */}
         <div className="grid gap-10">
           <div className="mx-auto">
@@ -69,7 +69,7 @@ const Footer = () => {
         {/* ./ logo + social media */}
 
         {/* nav items */}
-        <div className="mt-8">
+        <div className="mt-8 lg:mt-0">
           <ul className="text-very-light-gray grid gap-4 text-center md:grid-cols-2">
             {navItems.map((item, index) => {
               return (
@@ -84,7 +84,7 @@ const Footer = () => {
       </div>
 
       {/* button + copy rights */}
-      <div className="mt-8 text-center">
+      <div className="mt-8 text-center lg:mt-0">
         <ButtonRequest />
 
         <p className="text-grayish-blue mt-6 font-medium">

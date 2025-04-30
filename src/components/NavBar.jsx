@@ -4,7 +4,7 @@ import ButtonRequest from "./ButtonRequest";
 
 const NavBar = ({ handleNav, nav }) => {
   return (
-    <div className="relative z-30 flex items-center justify-between bg-white p-6 md:p-3">
+    <div className="relative z-30 flex items-center justify-between bg-white p-6 md:p-3 lg:px-5">
       {/* Logo */}
       <div>
         <img src="/images/logo.svg" alt="Logo easybank" />

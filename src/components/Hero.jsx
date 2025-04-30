@@ -6,7 +6,7 @@ const Hero = () => {
       {/* hero text */}
       <div className="flex flex-col items-center justify-center gap-8 px-4 text-center md:mt-10 md:w-9/12 md:items-start md:justify-start md:gap-6 md:pr-0 md:text-start">
         <h1 className="text-dark-blue -mt-6 text-4xl md:mt-0 md:text-start">
-          Next generation digital banking
+          Next generation <br className="hidden lg:block" /> digital banking
         </h1>
         <p className="text-grayish-blue md:max-w-[400px] md:text-start">
           Take your financial life online. Your Easybank account will be a
@@ -18,17 +18,17 @@ const Hero = () => {
       {/* ./ hero text */}
 
       {/* hero image */}
-      <div className="relative overflow-hidden md:h-screen md:w-full md:overflow-y-visible">
+      <div className="relative overflow-hidden md:h-screen md:w-full lg:overflow-hidden">
         <img
           src="./images/image-mockups.png"
           alt="Mockups"
-          className="absolute -top-24 md:-top-16 md:-right-[74px] md:z-10"
+          className="absolute -top-24 md:-top-16 md:-right-[74px] md:z-10 lg:-top-32 lg:-right-24"
         />
 
         <img
           src="./images/bg-intro-desktop.svg"
           alt="Background Image desktop"
-          className="hidden md:absolute md:-top-16 md:-right-16 md:block md:w-full md:scale-125"
+          className="hidden md:absolute md:-top-16 md:-right-16 md:-z-10 md:block md:w-full md:scale-125 lg:-top-20"
         />
         <img
           src="./images/bg-intro-mobile.svg"

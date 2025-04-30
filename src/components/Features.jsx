@@ -31,13 +31,14 @@ const Features = () => {
         </h2>
         <p className="text-grayish-blue">
           We leverage Open Banking to turn your bank account into your financial
-          hub. Control your finances like never before.
+          hub. <br className="hidden lg:block" /> Control your finances like
+          never before.
         </p>
       </div>
       {/* ./ header */}
 
       {/* features */}
-      <div className="grid md:grid-cols-2 md:justify-center md:gap-4">
+      <div className="grid md:grid-cols-2 md:justify-center md:gap-4 lg:grid-cols-4">
         {features.map((feature, index) => {
           return (
             <div

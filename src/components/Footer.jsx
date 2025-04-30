@@ -54,13 +54,8 @@ const Footer = () => {
           <div className="flex justify-evenly gap-4">
             {images.map((image, index) => {
               return (
-                <a href={image.link} target="_blank">
-                  <img
-                    key={index + 1}
-                    src={image.img}
-                    alt={image.alt}
-                    className="size-7"
-                  />
+                <a href={image.link} key={index + 1} target="_blank">
+                  <img src={image.img} alt={image.alt} className="size-7" />
                 </a>
               );
             })}
@@ -74,7 +69,12 @@ const Footer = () => {
             {navItems.map((item, index) => {
               return (
                 <li key={index + 1}>
-                  <a href="#">{item}</a>
+                  <a
+                    href="#"
+                    className="hover:text-lime-green transition-colors duration-300 ease-in"
+                  >
+                    {item}
+                  </a>
                 </li>
               );
             })}

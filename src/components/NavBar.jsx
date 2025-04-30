@@ -4,10 +4,14 @@ import ButtonRequest from "./ButtonRequest";
 
 const NavBar = ({ handleNav, nav }) => {
   return (
-    <div className="relative z-30 flex items-center justify-between bg-white p-6 md:p-3 lg:px-5">
+    <div className="relative z-30 flex items-center justify-between bg-white p-6 md:p-3 lg:px-12 xl:px-[150px] xl:py-4">
       {/* Logo */}
       <div>
-        <img src="/images/logo.svg" alt="Logo easybank" />
+        <img
+          src="/images/logo.svg"
+          alt="Logo easybank"
+          className="pl-4 xl:scale-125"
+        />
       </div>
       {/* end Logo */}
 
@@ -58,27 +62,27 @@ const NavBar = ({ handleNav, nav }) => {
       {/* desktop menu */}
       <ul className="hidden justify-evenly gap-4 md:flex lg:gap-8">
         <li>
-          <a href="#" className="text-grayish-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
             Home
           </a>
         </li>
         <li>
-          <a href="#" className="text-grayish-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
             About
           </a>
         </li>
         <li>
-          <a href="#" className="text-grayish-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
             Contact
           </a>
         </li>
         <li>
-          <a href="#" className="text-grayish-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
             Blog
           </a>
         </li>
         <li>
-          <a href="#" className="text-grayish-blue font-medium">
+          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
             Careers
           </a>
         </li>

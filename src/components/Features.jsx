@@ -23,13 +23,13 @@ const Features = () => {
   ];
 
   return (
-    <div className="bg-light-grayish-blue px-4 py-16 md:-mt-64">
+    <div className="bg-light-grayish-blue px-4 py-16 md:-mt-64 lg:px-12 xl:px-36">
       {/* header */}
       <div className="mb-12 text-center md:w-2/3 md:text-start">
-        <h2 className="text-dark-blue mb-4 text-3xl font-medium">
+        <h2 className="text-dark-blue mb-4 text-3xl font-medium xl:text-4xl">
           Why choose <br className="md:hidden" /> Easybank?
         </h2>
-        <p className="text-grayish-blue">
+        <p className="text-grayish-blue xl:text-lg">
           We leverage Open Banking to turn your bank account into your financial
           hub. <br className="hidden lg:block" /> Control your finances like
           never before.
@@ -46,10 +46,10 @@ const Features = () => {
               className="mb-8 flex flex-col items-center gap-4 last:mb-0 md:items-start"
             >
               <img src={feature.image} alt={feature.text} />
-              <h4 className="text-dark-blue text-xl font-medium md:text-start">
+              <h4 className="text-dark-blue text-xl font-medium md:text-start xl:text-2xl">
                 {feature.title}
               </h4>
-              <p className="text-grayish-blue text-center md:text-start">
+              <p className="text-grayish-blue text-center md:text-start xl:text-lg">
                 {feature.text}
               </p>
             </div>

@@ -39,10 +39,10 @@ const navItems = [
 
 const Footer = () => {
   return (
-    <div className="bg-dark-blue grid justify-center py-10 lg:grid-cols-2 lg:px-5">
-      <div className="lg:grid lg:grid-cols-2 lg:gap-8">
+    <div className="bg-dark-blue grid justify-center py-10 lg:grid-cols-2 lg:items-center lg:px-12 xl:items-start xl:px-36">
+      <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-6 xl:gap-20">
         {/* logo + social media */}
-        <div className="grid gap-10">
+        <div className="grid gap-10 lg:gap-12">
           <div className="mx-auto">
             <img
               src="/images/logo-white.svg"
@@ -70,7 +70,7 @@ const Footer = () => {
 
         {/* nav items */}
         <div className="mt-8 lg:mt-0">
-          <ul className="text-very-light-gray grid gap-4 text-center md:grid-cols-2">
+          <ul className="text-very-light-gray grid gap-4 text-center md:grid-cols-2 lg:text-start">
             {navItems.map((item, index) => {
               return (
                 <li key={index + 1}>
@@ -84,7 +84,7 @@ const Footer = () => {
       </div>
 
       {/* button + copy rights */}
-      <div className="mt-8 text-center lg:mt-0">
+      <div className="mt-8 text-center lg:mt-0 lg:text-end xl:place-self-end">
         <ButtonRequest />
 
         <p className="text-grayish-blue mt-6 font-medium">

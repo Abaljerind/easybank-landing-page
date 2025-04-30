@@ -31,17 +31,17 @@ const Articles = () => {
   ];
 
   return (
-    <div className="bg-very-light-gray px-4 py-16">
+    <div className="bg-very-light-gray px-4 py-16 lg:px-12 xl:px-36">
       {/* header */}
       <div className="mb-12 text-center md:text-start">
-        <h2 className="text-dark-blue mb-4 text-3xl font-medium">
+        <h2 className="text-dark-blue mb-4 text-3xl font-medium xl:text-4xl">
           Latest Articles
         </h2>
       </div>
       {/* ./ header */}
 
       {/* article */}
-      <div className="grid md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+      <div className="grid md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4">
         {articles.map((article, index) => {
           return (
             <div
@@ -54,7 +54,7 @@ const Articles = () => {
                 className="h-[220px] w-full object-cover"
               />
               <div className="p-5">
-                <p className="text-grayish-blue mb-2 text-xs">
+                <p className="text-grayish-blue mb-2 text-xs xl:text-sm">
                   {article.author}
                 </p>
                 <h4 className="text-dark-blue mb-2 text-lg leading-6 font-medium">

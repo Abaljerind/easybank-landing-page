@@ -3,14 +3,16 @@ import { IoMenuOutline } from "react-icons/io5";
 import ButtonRequest from "./ButtonRequest";
 
 const NavBar = ({ handleNav, nav }) => {
+  const navItems = ["Home", "About", "Contact", "Blog", "Careers"];
+
   return (
-    <div className="relative z-30 flex items-center justify-between bg-white p-6 md:p-3 lg:px-12 xl:px-[150px] xl:py-4">
+    <div className="relative z-30 flex items-center justify-between bg-white px-4 py-6 md:p-3 lg:px-12 xl:px-[150px] xl:py-4">
       {/* Logo */}
       <div>
         <img
           src="/images/logo.svg"
           alt="Logo easybank"
-          className="pl-4 xl:scale-125"
+          className="xl:scale-125 xl:pl-4"
         />
       </div>
       {/* end Logo */}
@@ -30,62 +32,33 @@ const NavBar = ({ handleNav, nav }) => {
         className={`absolute top-24 left-0 z-20 w-full origin-top md:hidden ${nav ? "scale-y-100" : "scale-y-0"} flex justify-center duration-300`}
       >
         <ul className="flex w-11/12 flex-col items-center justify-between gap-4 rounded-md bg-white py-6 shadow-md">
-          <li className="w-full cursor-pointer text-center text-lg">
-            <a href="#" className="text-dark-blue font-medium">
-              Home
-            </a>
-          </li>
-          <li className="w-full cursor-pointer text-center text-lg">
-            <a href="#" className="text-dark-blue font-medium">
-              About
-            </a>
-          </li>
-          <li className="w-full cursor-pointer text-center text-lg">
-            <a href="#" className="text-dark-blue font-medium">
-              Contact
-            </a>
-          </li>
-          <li className="w-full cursor-pointer text-center text-lg">
-            <a href="#" className="text-dark-blue font-medium">
-              Blog
-            </a>
-          </li>
-          <li className="w-full cursor-pointer text-center text-lg">
-            <a href="#" className="text-dark-blue font-medium">
-              Careers
-            </a>
-          </li>
+          {navItems.map((navItem, index) => {
+            return (
+              <li
+                key={index + 1}
+                className="w-full cursor-pointer text-center text-lg"
+              >
+                <a href="#" className="text-dark-blue font-medium">
+                  {navItem}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
       {/* end Mobile menu */}
 
       {/* desktop menu */}
       <ul className="hidden justify-evenly gap-4 md:flex lg:gap-8">
-        <li>
-          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
-            Contact
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
-            Blog
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-grayish-blue font-medium xl:text-lg">
-            Careers
-          </a>
-        </li>
+        {navItems.map((navItem, index) => {
+          return (
+            <li key={index + 1}>
+              <a href="#" className="gradient-border nav-item">
+                {navItem}
+              </a>
+            </li>
+          );
+        })}
       </ul>
       {/* end desktop menu */}
 

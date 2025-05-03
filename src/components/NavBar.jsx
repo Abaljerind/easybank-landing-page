@@ -6,7 +6,7 @@ const NavBar = ({ handleNav, nav }) => {
   const navItems = ["Home", "About", "Contact", "Blog", "Careers"];
 
   return (
-    <div className="relative z-30 flex items-center justify-between bg-white px-4 py-6 md:p-3 lg:px-12 xl:px-[150px] xl:py-4">
+    <nav className="relative z-30 flex items-center justify-between bg-white px-4 py-6 md:p-3 lg:px-12 xl:px-[150px] xl:py-4">
       {/* Logo */}
       <div>
         <img
@@ -67,7 +67,7 @@ const NavBar = ({ handleNav, nav }) => {
         <ButtonRequest />
       </div>
       {/* end request invite */}
-    </div>
+    </nav>
   );
 };
 

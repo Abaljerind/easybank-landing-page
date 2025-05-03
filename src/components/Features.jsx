@@ -23,9 +23,9 @@ const Features = () => {
   ];
 
   return (
-    <div className="bg-light-grayish-blue px-4 py-16 md:-mt-64 lg:px-12 xl:px-36">
+    <section className="bg-light-grayish-blue px-4 py-16 md:-mt-64 lg:px-12 xl:px-36">
       {/* header */}
-      <div className="mb-12 text-center md:w-2/3 md:text-start">
+      <header className="mb-12 text-center md:w-2/3 md:text-start">
         <h2 className="text-dark-blue mb-4 text-3xl font-medium xl:text-4xl">
           Why choose <br className="md:hidden" /> Easybank?
         </h2>
@@ -34,11 +34,14 @@ const Features = () => {
           hub. <br className="hidden lg:block" /> Control your finances like
           never before.
         </p>
-      </div>
+      </header>
       {/* ./ header */}
 
       {/* features */}
-      <div className="grid md:grid-cols-2 md:justify-center md:gap-4 lg:grid-cols-4">
+      <article
+        role="list"
+        className="grid md:grid-cols-2 md:justify-center md:gap-4 lg:grid-cols-4"
+      >
         {features.map((feature, index) => {
           return (
             <div
@@ -55,9 +58,9 @@ const Features = () => {
             </div>
           );
         })}
-      </div>
+      </article>
       {/* ./ features */}
-    </div>
+    </section>
   );
 };
 

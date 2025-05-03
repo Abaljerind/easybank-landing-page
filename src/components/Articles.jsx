@@ -31,20 +31,23 @@ const Articles = () => {
   ];
 
   return (
-    <div className="bg-very-light-gray px-4 py-16 lg:px-12 xl:px-36">
+    <section className="bg-very-light-gray px-4 py-16 lg:px-12 xl:px-36">
       {/* header */}
-      <div className="mb-12 text-center md:text-start">
+      <header className="mb-12 text-center md:text-start">
         <h2 className="text-dark-blue mb-4 text-3xl font-medium xl:text-4xl">
           Latest Articles
         </h2>
-      </div>
+      </header>
       {/* ./ header */}
 
       {/* article */}
-      <div className="grid md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4">
+      <div
+        role="list"
+        className="grid md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4"
+      >
         {articles.map((article, index) => {
           return (
-            <div
+            <article
               key={index + 1}
               className="group mb-8 flex flex-col gap-2 overflow-hidden rounded-md bg-white shadow-xs duration-300 last:mb-0 hover:drop-shadow-xl md:mb-0"
             >
@@ -64,12 +67,12 @@ const Articles = () => {
                   {article.description}
                 </p>
               </div>
-            </div>
+            </article>
           );
         })}
       </div>
       {/* ./ article */}
-    </div>
+    </section>
   );
 };
 

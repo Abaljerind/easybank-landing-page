@@ -39,7 +39,7 @@ const navItems = [
 
 const Footer = () => {
   return (
-    <div className="bg-dark-blue grid justify-center py-10 lg:grid-cols-2 lg:items-center lg:px-12 xl:items-start xl:px-36">
+    <footer className="bg-dark-blue grid justify-center py-10 lg:grid-cols-2 lg:items-center lg:px-12 xl:items-start xl:px-36">
       <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-6 xl:gap-20">
         {/* logo + social media */}
         <div className="grid gap-10 lg:gap-12">
@@ -54,7 +54,12 @@ const Footer = () => {
           <div className="flex justify-evenly gap-4">
             {images.map((image, index) => {
               return (
-                <a href={image.link} key={index + 1} target="_blank">
+                <a
+                  href={image.link}
+                  key={index + 1}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={image.img} alt={image.alt} className="size-7" />
                 </a>
               );
@@ -64,7 +69,7 @@ const Footer = () => {
         {/* ./ logo + social media */}
 
         {/* nav items */}
-        <div className="mt-8 lg:mt-0">
+        <nav className="mt-8 lg:mt-0" aria-label="Footer Navigation">
           <ul className="text-very-light-gray grid gap-4 text-center md:grid-cols-2 lg:text-start">
             {navItems.map((item, index) => {
               return (
@@ -79,7 +84,7 @@ const Footer = () => {
               );
             })}
           </ul>
-        </div>
+        </nav>
         {/* ./ nav items */}
       </div>
 
@@ -92,7 +97,7 @@ const Footer = () => {
         </p>
       </div>
       {/* ./ button + copy rights */}
-    </div>
+    </footer>
   );
 };
 

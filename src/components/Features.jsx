@@ -52,7 +52,7 @@ const Features = () => {
               <h4 className="text-dark-blue text-xl font-medium md:text-start xl:text-2xl">
                 {feature.title}
               </h4>
-              <p className="text-grayish-blue text-center md:text-start xl:text-lg">
+              <p className="text-grayish-blue text-center md:text-start xl:text-base">
                 {feature.text}
               </p>
             </div>

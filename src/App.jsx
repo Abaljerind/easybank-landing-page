@@ -14,14 +14,14 @@ function App() {
   };
 
   return (
-    <>
+    <div className="2xl:overflow-hidden">
       <Overlay nav={nav} />
       <NavBar handleNav={handleNav} nav={nav} />
       <Hero />
       <Features />
       <Articles />
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -31,9 +31,9 @@ const Articles = () => {
   ];
 
   return (
-    <section className="bg-very-light-gray px-4 py-16 lg:px-12 xl:px-36">
+    <section className="bg-very-light-gray px-4 py-16 lg:px-12 xl:px-36 2xl:py-24">
       {/* header */}
-      <header className="mb-12 text-center md:text-start">
+      <header className="mb-12 text-center md:text-start 2xl:mb-16">
         <h2 className="text-dark-blue mb-4 text-3xl font-medium xl:text-4xl">
           Latest Articles
         </h2>

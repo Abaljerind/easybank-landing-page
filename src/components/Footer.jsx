@@ -39,7 +39,7 @@ const navItems = [
 
 const Footer = () => {
   return (
-    <footer className="bg-dark-blue grid justify-center py-10 lg:grid-cols-2 lg:items-center lg:px-12 xl:items-start xl:px-36">
+    <footer className="bg-dark-blue grid justify-center py-10 lg:grid-cols-2 lg:items-center lg:px-12 xl:items-start xl:px-36 2xl:py-24">
       <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-6 xl:gap-20">
         {/* logo + social media */}
         <div className="grid gap-10 lg:gap-12">
@@ -47,7 +47,7 @@ const Footer = () => {
             <img
               src="/images/logo-white.svg"
               alt="easybank logo"
-              className="scale-125"
+              className="scale-125 2xl:scale-150"
             />
           </div>
 
@@ -59,6 +59,7 @@ const Footer = () => {
                   key={index + 1}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="transition duration-200 hover:scale-125"
                 >
                   <img src={image.img} alt={image.alt} className="size-7" />
                 </a>

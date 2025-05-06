@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div className="2xl:overflow-hidden">
+    <div className="2xl:mx-auto 2xl:max-w-[1540px] 2xl:overflow-hidden">
       <Overlay nav={nav} />
       <NavBar handleNav={handleNav} nav={nav} />
       <Hero />

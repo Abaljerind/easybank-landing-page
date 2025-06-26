@@ -2,7 +2,7 @@ import ButtonRequest from "./ButtonRequest";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse pb-20 md:flex-row md:pb-4 lg:pb-8 xl:pb-0 2xl:pb-12">
+    <section className="mt-16 flex flex-col-reverse pb-20 md:mt-0 md:flex-row md:pb-4 lg:pb-8 xl:pb-0 2xl:pb-12">
       {/* hero text */}
       <div className="flex flex-col items-center justify-center gap-8 px-4 text-center md:mt-10 md:w-8/12 md:items-start md:justify-start md:gap-6 md:pr-0 md:text-start lg:pl-12 xl:pl-36 2xl:-mt-64 2xl:w-1/2 2xl:justify-center 2xl:pl-36">
         <h1 className="text-dark-blue -mt-6 text-4xl md:mt-0 md:text-start xl:text-6xl">

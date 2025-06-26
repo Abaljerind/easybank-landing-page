@@ -2,7 +2,7 @@ import ButtonRequest from "./ButtonRequest";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse pb-20 md:flex-row md:pb-4 lg:pb-8 xl:pb-24 2xl:pb-0">
+    <section className="flex flex-col-reverse pb-20 md:flex-row md:pb-4 lg:pb-8 xl:pb-0 2xl:pb-12">
       {/* hero text */}
       <div className="flex flex-col items-center justify-center gap-8 px-4 text-center md:mt-10 md:w-8/12 md:items-start md:justify-start md:gap-6 md:pr-0 md:text-start lg:pl-12 xl:pl-36 2xl:-mt-64 2xl:w-1/2 2xl:justify-center 2xl:pl-36">
         <h1 className="text-dark-blue -mt-6 text-4xl md:mt-0 md:text-start xl:text-6xl">
@@ -18,7 +18,7 @@ const Hero = () => {
       {/* ./ hero text */}
 
       {/* hero image */}
-      <figure className="relative overflow-hidden md:h-dvh md:w-full lg:max-w-2xl lg:overflow-hidden 2xl:w-1/2 2xl:max-w-4xl">
+      <figure className="relative overflow-hidden md:h-dvh md:w-full lg:h-[80dvh] lg:max-w-2xl xl:h-dvh 2xl:w-1/2 2xl:max-w-4xl">
         <img
           src="./images/image-mockups.png"
           alt="Phone screen mockups of Easybank app"

@@ -10,7 +10,11 @@ function App() {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
-    setNav((prevNav) => !prevNav);
+    setNav((prevNav) => {
+      const newNav = !prevNav;
+      document.body.style.overflow = newNav ? "hidden" : "auto";
+      return newNav;
+    });
   };
 
   return (

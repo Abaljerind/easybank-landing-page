@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="md:w-full md:pb-60">
         <figure className="relative h-[325px] min-[375px]:min-h-[385px] md:min-h-0">
           {/* background */}
-          <picture className="absolute right-0 left-0 -z-10">
+          <picture className="absolute inset-0 -z-10">
             <source
               media="(min-width:768px)"
               srcset="./images/bg-intro-desktop.svg"
@@ -15,7 +15,7 @@ const Hero = () => {
             <img
               src="./images/bg-intro-mobile.svg"
               alt="Decorative background for Hero section"
-              className="w-full min-[425px]:max-w-[426px] md:absolute md:-top-4 md:scale-[165%]"
+              className="w-full min-[425px]:max-w-[426px] md:absolute md:top-0 md:left-10 md:scale-200"
             ></img>
           </picture>
           {/* ./ background */}

@@ -2,10 +2,11 @@ import ButtonRequest from "./ButtonRequest";
 
 const Hero = () => {
   return (
-    <section className="pb-24">
+    <section className="pb-24 md:flex md:flex-row-reverse md:overflow-hidden">
       {/* hero img */}
-      <div>
-        <figure className="relative h-[325px] min-[375px]:min-h-[385px]">
+      <div className="md:w-full md:pb-60">
+        <figure className="relative h-[325px] min-[375px]:min-h-[385px] md:min-h-0">
+          {/* background */}
           <picture className="absolute right-0 left-0 -z-10">
             <source
               media="(min-width:768px)"
@@ -14,25 +15,29 @@ const Hero = () => {
             <img
               src="./images/bg-intro-mobile.svg"
               alt="Decorative background for Hero section"
-              className="w-full min-[425px]:max-w-[426px]"
+              className="w-full min-[425px]:max-w-[426px] md:absolute md:-top-4 md:scale-[165%]"
             ></img>
           </picture>
+          {/* ./ background */}
+
+          {/* mockups */}
           <img
             src="./images/image-mockups.png"
             alt="Phone screen mockups of Easybank app"
-            className="absolute -top-20 drop-shadow-xl min-[321px]:scale-95 min-[425px]:max-w-[426px]"
+            className="absolute -top-20 drop-shadow-xl min-[321px]:scale-95 min-[425px]:max-w-[426px] md:-top-12 md:-left-4 md:scale-100"
           />
+          {/* ./ mockups */}
         </figure>
       </div>
       {/* ./ hero img */}
 
       {/* hero text */}
-      <div className="space-y-4 px-4 text-center max-[700px]:mt-0 min-[400px]:mt-12">
+      <div className="space-y-4 px-4 text-center max-[700px]:mt-0 min-[400px]:mt-12 md:text-start">
         <div className="space-y-4">
           <h1 className="text-dark-blue text-4xl leading-11 font-medium">
             Next generation <br /> digital banking
           </h1>
-          <p className="text-grayish-blue">
+          <p className="text-grayish-blue md:text-balance">
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.

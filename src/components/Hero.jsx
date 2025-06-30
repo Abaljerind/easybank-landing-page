@@ -10,7 +10,7 @@ const Hero = () => {
           <picture className="absolute inset-0 -z-10">
             <source
               media="(min-width:768px)"
-              srcset="./images/bg-intro-desktop.svg"
+              srcSet="./images/bg-intro-desktop.svg"
             />
             <img
               src="./images/bg-intro-mobile.svg"
